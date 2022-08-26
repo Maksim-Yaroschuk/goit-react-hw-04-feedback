@@ -4,7 +4,7 @@ export class Statistics extends Component {
   render() {
     const { good, neutral, bad, total, positivePercentage } = this.props;
     return (
-      <ul>
+      <ul className='feedbackList feedbackFont'>
         <li>Good: {good}</li>
         <li>Neutral: {neutral}</li>
         <li>Bad: {bad}</li>

@@ -6,6 +6,7 @@ export class FeedbackOptions extends Component {
     return options.map(option => {
       return (
         <button
+          className='button'
           key={option}
           type="button"
           onClick={() => {

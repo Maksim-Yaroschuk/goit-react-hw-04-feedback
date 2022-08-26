@@ -5,7 +5,7 @@ export class Section extends Component {
     const { title, children } = this.props;
     return (
       <>
-        <h2>{title}</h2>
+        <h2 className='title'>{title}</h2>
         {children}
       </>
     );
