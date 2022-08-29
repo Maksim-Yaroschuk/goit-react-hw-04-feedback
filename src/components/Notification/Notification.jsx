@@ -1,8 +1,9 @@
-import { Component } from 'react';
+import PropTypes from 'prop-types';
 
-export class Notification extends Component {
-  render() {
-    const { message } = this.props;
-    return <p className='feedbackFont feedbackNotification'>{message}</p>;
-  }
-}
+export const Notification = ({ message }) => {
+  return <p className="feedbackFont feedbackNotification">{message}</p>;
+};
+
+Notification.propTypes = {
+  message: PropTypes.string.isRequired,
+};
